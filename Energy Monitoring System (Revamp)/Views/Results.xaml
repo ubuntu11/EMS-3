@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Energy_Monitoring_System__Revamp_.Views.Results"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:views="clr-namespace:Energy_Monitoring_System__Revamp_.Views"
+             mc:Ignorable="d" >
+    <Grid>
+        <GroupBox Header="Results" Width="340" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+            <Grid>
+                <ItemsControl Name="List">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Vertical">
+                                <ContentControl>
+                                    <views:Result></views:Result>
+                                </ContentControl>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>
